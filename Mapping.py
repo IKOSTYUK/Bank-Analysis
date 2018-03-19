@@ -1,5 +1,4 @@
-### Importing Data
-
+# Importing Data
 
 %matplotlib inline
 
@@ -20,7 +19,7 @@ url1 = "http://notebook.gaslampmedia.com/wp-content/uploads/2013/08/zip_codes_st
 bank_data=pd.read_csv(url, parse_dates=[6], index_col = False)
 lat_long = pd.read_csv(url1, index_col = False)
 
-### Working With the Data
+# Working With the Data
 
 bank_data["key"] = bank_data["City"].map(str) + bank_data["ST"]
 bank_data = bank_data[['Bank Name','key']]
@@ -31,7 +30,7 @@ lat_long["key"] = lat_long["city"].map(str) + lat_long["ST"]
 lat_long = lat_long[['key', 'latitude', 'longitude']]
 lat_long1 = lat_long.drop_duplicates(subset=['key'], keep = 'last')
 
-### Merging on Key and Mapping Lat & Lon
+# Merging on Key and Mapping Lat & Lon
 
 data = bank_data.merge(lat_long1, on='key', how='left')
 data1 = data[['Bank Name', 'latitude', 'longitude']]
