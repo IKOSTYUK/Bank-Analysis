@@ -1,5 +1,4 @@
 # Bank-Analysis
-
 Visualizing Bank Failures in the USA with Python & geoplotlib, Years: 2000-2017
 
 Included are the mapping and visualizing scripts used to generate the map and bar plots. 
