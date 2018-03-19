@@ -12,7 +12,6 @@ import geoplotlib
 from geoplotlib.colors import colorbrewer
 from geoplotlib.utils import epoch_to_str, BoundingBox, read_csv
 
-
 url = "http://www.fdic.gov/bank/individual/failed/banklist.csv"
 url1 = "http://notebook.gaslampmedia.com/wp-content/uploads/2013/08/zip_codes_states.csv"
 
